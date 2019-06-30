@@ -6,6 +6,7 @@ height: 100vh;
 
 .row {
   display: flex;
+  justify-content: space-around;
 }
 
 .column {
@@ -30,13 +31,30 @@ const Bottom = () => {
   </div>
   <div
   className="column">
+    <h3>Use My Tech Stuff</h3>
+<p>React</p>
+<p>Redux</p>
+<p>React Router</p>
+<p>API</p>
   </div>
   <div
   className="column">
-    
+    <h3>Use My Tech Stuff</h3>
+<p>React</p>
+<p>Redux</p>
+<p>React Router</p>
+<p>API</p>
   </div>
 </div>
 <div className="row">
+  <div
+  className="column">
+<h3>Top Nine</h3>
+<p>Javascript</p>
+<p>HTML</p>
+<p>CSS</p>
+<p>LESS</p>
+  </div>
   <div
   className="column">
     <h3>Top Nine</h3>
@@ -47,11 +65,11 @@ const Bottom = () => {
   </div>
   <div
   className="column">
-    
-  </div>
-  <div
-  className="column">
-    
+    <h3>Top Nine</h3>
+<p>Javascript</p>
+<p>HTML</p>
+<p>CSS</p>
+<p>LESS</p>
   </div>
 </div>
     </StyledBottom>
