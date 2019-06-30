@@ -1,9 +1,8 @@
 import React from 'react';
+import blocks from './blocks.jpg';
 import styled from 'styled-components';
 
 const StyledBottomMiddle = styled.div`
-height: 100vh;
-background-image: url('');
 clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
 
 .row {
@@ -11,6 +10,8 @@ clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-size: cover;
+background-image: url(${blocks});
 }
 
 .column {
@@ -18,6 +19,8 @@ clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
   flex-direction: column;
   width: 20%;
   text-align: center;
+  background: white;
+  margin: 1rem;
 }
 
 p {
