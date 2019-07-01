@@ -21,6 +21,11 @@ background-image: url(${blocks});
   text-align: center;
   background: white;
   margin: 1rem;
+  transition: .8s;
+
+&:hover {
+ width: 30%;
+}
 }
 
 p {
