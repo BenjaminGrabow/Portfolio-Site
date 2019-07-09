@@ -3,16 +3,23 @@ import avatar from './myAvatar.png';
 import styled from 'styled-components';
 
 const StyledTop = styled.div`
-height:100vh;
+/* height:100vh; */
 width:100%;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 font-size: 3rem;
+font-family: "eurostile",sans-serif;
 
 h1 {
+  color: #293347;
   margin: 0;
+}
+
+img {
+  border-radius: 5rem;
+  margin-bottom: 1rem;
 }
 
 .startButton {
@@ -32,11 +39,11 @@ class Top extends React.Component {
   render() {
     return (
       <StyledTop>
+        <h1>Front-end and Back-end Developer</h1>
+        <p>I design and code beautifully simple things, and I love what I do.</p>
         <img src={avatar} alt="own avatar" />
-        <h1>Benjamin Grabow</h1>
-        <p>Full Stack Developer</p>
         <button
-          className="startButton">SEE PROJECTS</button>
+          className="startButton">PROJECTS</button>
       </StyledTop>
     );
   }
