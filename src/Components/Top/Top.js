@@ -3,12 +3,8 @@ import avatar from './myAvatar.png';
 import styled from 'styled-components';
 
 const StyledTop = styled.div`
-text-align: center;
 height:100vh;
 width:100%;
-padding:0;
-margin:0;
-color: white;
 display: flex;
 flex-direction: column;
 justify-content: center;
