@@ -3,7 +3,6 @@ import avatar from './myAvatar.png';
 import styled from 'styled-components';
 
 const StyledTop = styled.div`
-/* height:100vh; */
 width:100%;
 display: flex;
 flex-direction: column;
