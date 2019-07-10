@@ -1,15 +1,37 @@
 import React from 'react';
-import code from './code.jpg'
-import Header from '../Header/Header';
+import logo from './logo.png';
 import avatar from './myAvatar.png';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const StyledTop = styled.div`
-background-image: url(${code});
 background-position: center;
 background-repeat: no-repeat; 
 background-size: cover;
 height: 100vh;
+
+.header {
+  display: flex;
+justify-content: space-around;
+align-items: center;
+
+a {
+  text-decoration: none;
+  border: .1rem solid #293347;
+  border-radius: 3rem;
+  height: 3rem;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #293347;
+  font-weight: 600;
+
+  &:hover {
+    background: #a6e3e9;
+  }
+}
+}
 
 .top{
 width:100%;
@@ -64,7 +86,7 @@ width: 50%;
 
 h1 {
   color: #293347;
-  color: white;
+  /* color: black; */
   margin: 0;
 }
 
@@ -92,39 +114,43 @@ class Top extends React.Component {
 
     (function type() {
 
-            if (count === texts.length) {
-                    count = 0;
-            }
+      if (count === texts.length) {
+        count = 0;
+      }
 
-            currentText = texts[count];
-            letter = currentText.slice(0, ++index);
+      currentText = texts[count];
+      letter = currentText.slice(0, ++index);
 
-            document.querySelector('.typing').textContent = letter;
-            if (letter.length === currentText.length) {
-                    count++;
-                    index = 0;
-            }
-            setTimeout(type, 350);
+      document.querySelector('.typing').textContent = letter;
+      if (letter.length === currentText.length) {
+        count++;
+        index = 0;
+      }
+      setTimeout(type, 350);
     }());
-};
+  };
   render() {
     return (
+
       <StyledTop>
-        <Header/>
+        <div className="header">
+          <img src={logo} alt="own logo" />
+          <Link to="/contact">Contact Me</Link>
+        </div>
         <div className="top">
-        <div className="row">
-          <div className="image">
-        <img src={avatar} alt="own avatar" />
-        </div>
-        <div className="column">
-        <h1 className="typing">Front-end, Back-end, Full Stack</h1>
-        <h1> Developer</h1>
-        </div>
-        </div>
-        <p>I design and code beautifully simple things, and I love what I do.</p>
-        <button
-          className="startButton">PROJECTS</button>
+          <div className="row">
+            <div className="image">
+              <img src={avatar} alt="own avatar" />
+            </div>
+            <div className="column">
+              <h1 className="typing">Front-end, Back-end, Full Stack</h1>
+              <h1> Developer</h1>
+            </div>
           </div>
+          <p>I design and code beautifully simple things, and I love what I do.</p>
+          <button
+            className="startButton">PROJECTS</button>
+        </div>
       </StyledTop>
     );
   }

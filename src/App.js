@@ -1,9 +1,6 @@
 import React from 'react';
 import ice from './ice.jpg';
-import Top from './Components/Top/Top';
-import TopMiddle from './Components/Middle/TopMiddle';
-import BottomMiddle from './Components/Middle/BottomMiddle';
-import Bottom from './Components/Bottom/Bottom';
+import ContainerHome from './Components/ContainerHome/ContainerHome';
 import Contact from './Components/Contact/Contact';
 import { Route } from 'react-router-dom';
 import './App.css';
@@ -19,10 +16,7 @@ background-image: url(${ice});
 function App() {
   return (
     <StyledApp>
-     <Top/>
-     <TopMiddle/>
-     <BottomMiddle/>
-     <Bottom />
+     <Route exact path="/" component={ContainerHome} />
      <Route path="/contact" component={Contact} />
     </StyledApp>
   );
