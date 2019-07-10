@@ -8,7 +8,10 @@ import './App.css';
 import styled from 'styled-components';
 
 const StyledApp = styled.div`
-background: #f4f6f6;
+background: #36D1DC; 
+background: -webkit-linear-gradient(to left, #5B86E5, #36D1DC); 
+background: linear-gradient(to left, #5B86E5, #36D1DC); 
+
 `;
 
 function App() {

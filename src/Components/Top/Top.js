@@ -35,10 +35,35 @@ class Top extends React.Component {
     super(props);
     this.state = {}
   }
+
+  componentDidMount = () => {
+    const texts = ['websites', 'illustration', 'hello'];
+    let count = 0;
+    let index = 0;
+    let currentText = "";
+    let letter = "";
+
+    (function type() {
+
+            if (count === texts.length) {
+                    count = 0;
+            }
+
+            currentText = texts[count];
+            letter = currentText.slice(0, ++index);
+
+            document.querySelector('.typing').textContent = letter;
+            if (letter.length === currentText.length) {
+                    count++;
+                    index = 0;
+            }
+            setTimeout(type, 400);
+    }());
+};
   render() {
     return (
       <StyledTop>
-        <h1>Front-end and Back-end Developer</h1>
+        <h1 className="typing">Front-end and Back-end Developer</h1>
         <p>I design and code beautifully simple things, and I love what I do.</p>
         <img src={avatar} alt="own avatar" />
         <button
