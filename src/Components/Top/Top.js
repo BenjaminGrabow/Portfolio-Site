@@ -1,8 +1,17 @@
 import React from 'react';
+import code from './code.jpg'
+import Header from '../Header/Header';
 import avatar from './myAvatar.png';
 import styled from 'styled-components';
 
 const StyledTop = styled.div`
+background-image: url(${code});
+background-position: center;
+background-repeat: no-repeat; 
+background-size: cover;
+height: 100vh;
+
+.top{
 width:100%;
 display: flex;
 flex-direction: column;
@@ -10,6 +19,7 @@ justify-content: center;
 align-items: center;
 font-size: 3rem;
 font-family: "eurostile",sans-serif;
+}
 
 .row {
   display: flex;
@@ -100,6 +110,8 @@ class Top extends React.Component {
   render() {
     return (
       <StyledTop>
+        <Header/>
+        <div className="top">
         <div className="row">
           <div className="image">
         <img src={avatar} alt="own avatar" />
@@ -112,6 +124,7 @@ class Top extends React.Component {
         <p>I design and code beautifully simple things, and I love what I do.</p>
         <button
           className="startButton">PROJECTS</button>
+          </div>
       </StyledTop>
     );
   }
