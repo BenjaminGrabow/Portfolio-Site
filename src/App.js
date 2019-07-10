@@ -5,16 +5,21 @@ import TopMiddle from './Components/Middle/TopMiddle';
 import BottomMiddle from './Components/Middle/BottomMiddle';
 import Bottom from './Components/Bottom/Bottom';
 import './App.css';
+import styled from 'styled-components';
+
+const StyledApp = styled.div`
+background: #f4f6f6;
+`;
 
 function App() {
   return (
-    <div className="App">
+    <StyledApp>
       <Header/>
      <Top/>
      <TopMiddle/>
      <BottomMiddle/>
      <Bottom />
-    </div>
+    </StyledApp>
   );
 }
 
