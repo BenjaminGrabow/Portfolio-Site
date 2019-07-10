@@ -1,4 +1,5 @@
 import React from 'react';
+import white from './ice.jpg';
 import Header from './Components/Header/Header';
 import Top from './Components/Top/Top';
 import TopMiddle from './Components/Middle/TopMiddle';
@@ -8,10 +9,10 @@ import './App.css';
 import styled from 'styled-components';
 
 const StyledApp = styled.div`
-background: #36D1DC; 
+/* background: #36D1DC; 
 background: -webkit-linear-gradient(to left, #5B86E5, #36D1DC); 
-background: linear-gradient(to left, #5B86E5, #36D1DC); 
-
+background: linear-gradient(to left, #5B86E5, #36D1DC);  */
+background-image: url(${white});
 `;
 
 function App() {

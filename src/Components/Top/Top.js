@@ -13,6 +13,26 @@ font-family: "eurostile",sans-serif;
 
 .row {
   display: flex;
+  width: 100%;
+}
+
+.image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  border-radius: 5rem;
+  margin-bottom: 1rem;
+  height: 15rem;
+}
+
+.column {
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 50%;
 }
 
 @keyframes blink {
@@ -34,16 +54,8 @@ font-family: "eurostile",sans-serif;
 
 h1 {
   color: #293347;
+  color: white;
   margin: 0;
-}
-
-.leftSpace {
-  padding-left: 2rem;
-}
-
-img {
-  border-radius: 5rem;
-  margin-bottom: 1rem;
 }
 
 .startButton {
@@ -89,11 +101,15 @@ class Top extends React.Component {
     return (
       <StyledTop>
         <div className="row">
+          <div className="image">
+        <img src={avatar} alt="own avatar" />
+        </div>
+        <div className="column">
         <h1 className="typing">Front-end, Back-end, Full Stack</h1>
-        <h1 className="leftSpace"> Developer</h1>
+        <h1> Developer</h1>
+        </div>
         </div>
         <p>I design and code beautifully simple things, and I love what I do.</p>
-        <img src={avatar} alt="own avatar" />
         <button
           className="startButton">PROJECTS</button>
       </StyledTop>
