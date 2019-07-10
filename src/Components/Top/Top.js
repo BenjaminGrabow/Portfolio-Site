@@ -11,9 +11,34 @@ align-items: center;
 font-size: 3rem;
 font-family: "eurostile",sans-serif;
 
+.row {
+  display: flex;
+}
+
+@keyframes blink {
+        0%{
+                opacity: 0;
+        }
+        100%{
+                opacity: 1;
+        }
+}
+.typing::after {
+        content: "";
+        position: absolute;
+        width: .1rem;
+        height: 7rem;
+        border-right: .2rem solid black;
+        animation: blink 0.5s infinite ease;
+}
+
 h1 {
   color: #293347;
   margin: 0;
+}
+
+.leftSpace {
+  padding-left: 2rem;
 }
 
 img {
@@ -37,7 +62,7 @@ class Top extends React.Component {
   }
 
   componentDidMount = () => {
-    const texts = ['websites', 'illustration', 'hello'];
+    const texts = ['Front-end', 'Back-end', 'Full Stack'];
     let count = 0;
     let index = 0;
     let currentText = "";
@@ -57,13 +82,16 @@ class Top extends React.Component {
                     count++;
                     index = 0;
             }
-            setTimeout(type, 400);
+            setTimeout(type, 350);
     }());
 };
   render() {
     return (
       <StyledTop>
-        <h1 className="typing">Front-end and Back-end Developer</h1>
+        <div className="row">
+        <h1 className="typing">Front-end, Back-end, Full Stack</h1>
+        <h1 className="leftSpace"> Developer</h1>
+        </div>
         <p>I design and code beautifully simple things, and I love what I do.</p>
         <img src={avatar} alt="own avatar" />
         <button
