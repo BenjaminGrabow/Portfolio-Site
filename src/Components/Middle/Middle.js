@@ -4,26 +4,33 @@ import nodejs from './nodejs.png';
 import react from './react.png';
 import styled from 'styled-components';
 
-const StyledTopMiddle = styled.div`
+const Middle = styled.div`
   display: flex;
   width: 100%;
-  padding: 1rem;
+  /* padding: 1rem; */
 
 
 .text {
-  width: 20%;
+  width: 25%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+h3 {
+  font-size: 2rem;
 }
 
 p { 
-  width: 50%;
+  font-size: 1.5rem;
+  width: 75%;
 }
 
 .images {
   padding: 0 1rem;
-  width: 60%;
+  width: 50%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,20 +41,20 @@ border-radius: 50%;
 }
 
 img {
-        width: 20%;
-        height: 8rem;
+        width: 25%;
+        height: 12rem;
         transition: .8s ease-in-out;
 
         &:hover {
-          width: 25%;
-          height: 10rem;
+          width: 35%;
+          height: 17rem;
         }
 }
 `;
 
 const TopMiddle = () => {
   return (
-    <StyledTopMiddle>
+    <Middle>
           <div className="text">
           <h3>MOTIVATED TO PRODUCE RESULTS</h3>
           <p>As a tencious self-thaught-programmer,
@@ -74,7 +81,7 @@ const TopMiddle = () => {
           engineering teams, and always stay attuned to the newest frameworks.
           </p>
           </div>
-    </StyledTopMiddle>
+    </Middle>
   );
 }
 

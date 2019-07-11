@@ -1,16 +1,16 @@
 import React from 'react';
 import Top from '../Top/Top';
-import TopMiddle from '../Middle/TopMiddle';
-import BottomMiddle from '../Middle/BottomMiddle';
-import Bottom from '../Bottom/Bottom';
+import Middle from '../Middle/Middle';
+// import BottomMiddle from '../Middle/BottomMiddle';
+import Projects from '../Projects/Projects';
 
 const ContainerHome = () => {
   return (
     <div>
       <Top />
-      <TopMiddle />
-      <BottomMiddle />
-      <Bottom />
+      <Middle />
+      {/* <BottomMiddle /> */}
+      <Projects />
     </div>
   );
 }

@@ -28,7 +28,7 @@ font-size: 3rem;
   font-size: 1rem;
   text-decoration: none;
   border: .1rem solid white;
-  border-radius: 3rem;
+  border-radius: .5rem;
   height: 3.5rem;
   width: 15%;
   display: flex;

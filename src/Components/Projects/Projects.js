@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const StyledBottom = styled.div`
+const StyledProjects = styled.div`
 height: 100vh;
 
 .row {
@@ -52,9 +52,9 @@ height: 100vh;
 }
 `;
 
-const Bottom = () => {
+const Projects = () => {
   return ( 
-    <StyledBottom>
+    <StyledProjects>
 <h2>Project Portfolio</h2>
 <div
 id="projects" 
@@ -151,8 +151,8 @@ className="row">
   </div>
   </div>
 </div>
-    </StyledBottom>
+    </StyledProjects>
    );
 }
  
-export default Bottom;
+export default Projects;

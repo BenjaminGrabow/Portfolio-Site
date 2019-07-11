@@ -1,6 +1,6 @@
 import React from 'react';
 import ContainerHome from './Components/ContainerHome/ContainerHome';
-import Contact from './Components/Contact/Contact';
+// import Contact from './Components/Contact/Contact';
 import { Route } from 'react-router-dom';
 import './App.css';
 import styled from 'styled-components';
@@ -15,7 +15,7 @@ function App() {
   return (
     <StyledApp>
      <Route exact path="/" component={ContainerHome} />
-     <Route path="/contact" component={Contact} />
+     {/* <Route path="/contact" component={Contact} /> */}
     </StyledApp>
   );
 }
