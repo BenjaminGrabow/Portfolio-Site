@@ -11,7 +11,7 @@ display: none;
 }
 
 .contact {
-background: linear-gradient(to right, #2c3e50, #bdc3c7);
+  background: linear-gradient(45deg, rgb(106, 120, 209), rgb(0, 164, 189));
 
 top: 50%;
 left: 50%;

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledProjects = styled.div`
-height: 100vh;
+/* height: 100vh; */
 
 .row {
   display: flex;
@@ -22,7 +22,7 @@ height: 100vh;
 .card {
   position: absolute;
   transform-style: preserve-3d;
-  transition: all 0.5s ease;
+  transition: all 1s ease;
   background: yellow;
   width: 100%;
   height: 100%;

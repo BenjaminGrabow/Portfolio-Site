@@ -9,6 +9,11 @@ const StyledFooter = styled.div`
   display: none;
 }
 
+.button-container {
+display: flex;
+justify-content: center;
+}
+
 .button {
   font-family: "eurostile",sans-serif;
   font-size: 1rem;
@@ -44,10 +49,12 @@ class Footer extends React.Component {
   render() { 
     return ( 
       <StyledFooter>
+        <div className={!this.props.contact ? "button-container" : "off"}>
 <div 
 className={!this.props.contact ? "button" : "off"}
 onClick={this.props.showContact}>
   Contact Me
+  </div>
   </div>
       </StyledFooter>
      );
