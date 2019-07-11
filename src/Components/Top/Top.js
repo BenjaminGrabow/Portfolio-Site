@@ -1,36 +1,49 @@
 import React from 'react';
-import logo from './logo.png';
-import avatar from './myAvatar.png';
+
+import water from './water.jpg';
+
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 const StyledTop = styled.div`
+background-image: linear-gradient(to right, rgba(0,0,0,.5), rgba(0,0,0,.5)),url(${water});
 background-position: center;
 background-repeat: no-repeat; 
 background-size: cover;
 height: 100vh;
+color: white;
 
 .header {
   display: flex;
 justify-content: space-around;
 align-items: center;
+padding-bottom: 7rem;
 
-a {
+h2 {
+font-family: 'Permanent Marker', cursive;
+font-size: 3rem;
+}
+}
+
+.button {
+  font-family: "eurostile",sans-serif;
+  font-size: 1rem;
   text-decoration: none;
-  border: .1rem solid #293347;
+  border: .1rem solid white;
   border-radius: 3rem;
-  height: 3rem;
-  width: 10%;
+  height: 3.5rem;
+  width: 15%;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #293347;
+  color: white;
   font-weight: 600;
+  transition: .6s ease-in-out;
 
   &:hover {
-    background: #a6e3e9;
+    background: white;
+    color: black;
   }
-}
 }
 
 .top{
@@ -48,17 +61,6 @@ font-family: "eurostile",sans-serif;
   width: 100%;
 }
 
-.image {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-}
-
-img {
-  border-radius: 5rem;
-  margin-bottom: 1rem;
-  height: 15rem;
-}
 
 .column {
 display: flex;
@@ -67,36 +69,15 @@ align-items: center;
 width: 50%;
 }
 
-@keyframes blink {
-        0%{
-                opacity: 0;
-        }
-        100%{
-                opacity: 1;
-        }
-}
-.typing::after {
-        content: "";
-        position: absolute;
-        width: .1rem;
-        height: 7rem;
-        border-right: .2rem solid black;
-        animation: blink 0.5s infinite ease;
-}
-
 h1 {
-  color: #293347;
-  /* color: black; */
   margin: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.startButton {
-border-radius: 2rem;
-background: white;
-width: 10%;
-height: 3rem;
-font-weight: 600;
+p {
+  font-family: 'Montserrat', sans-serif;
 }
+
 `;
 
 class Top extends React.Component {
@@ -105,51 +86,30 @@ class Top extends React.Component {
     this.state = {}
   }
 
-  componentDidMount = () => {
-    const texts = ['Front-end', 'Back-end', 'Full Stack'];
-    let count = 0;
-    let index = 0;
-    let currentText = "";
-    let letter = "";
-
-    (function type() {
-
-      if (count === texts.length) {
-        count = 0;
-      }
-
-      currentText = texts[count];
-      letter = currentText.slice(0, ++index);
-
-      document.querySelector('.typing').textContent = letter;
-      if (letter.length === currentText.length) {
-        count++;
-        index = 0;
-      }
-      setTimeout(type, 350);
-    }());
-  };
   render() {
     return (
 
       <StyledTop>
         <div className="header">
-          <img src={logo} alt="own logo" />
-          <Link to="/contact">Contact Me</Link>
+          <h2>Benjamin</h2>
+          <a
+            className="button"
+            href="#contact">
+            Contact Me
+            </a>
+          <h2>Grabow</h2>
         </div>
         <div className="top">
-          <div className="row">
-            <div className="image">
-              <img src={avatar} alt="own avatar" />
-            </div>
-            <div className="column">
-              <h1 className="typing">Front-end, Back-end, Full Stack</h1>
-              <h1> Developer</h1>
-            </div>
+          <div className="column">
+            <h1>Full Stack</h1>
+            <h1>Developer</h1>
           </div>
           <p>I design and code beautifully simple things, and I love what I do.</p>
-          <button
-            className="startButton">PROJECTS</button>
+          <a
+            className="button"
+            href="#projects">
+            Projects
+            </a>
         </div>
       </StyledTop>
     );

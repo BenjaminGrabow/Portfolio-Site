@@ -56,7 +56,9 @@ const Bottom = () => {
   return ( 
     <StyledBottom>
 <h2>Project Portfolio</h2>
-<div className="row">
+<div
+id="projects" 
+className="row">
   <div
   className="column">
     <div className="card">
