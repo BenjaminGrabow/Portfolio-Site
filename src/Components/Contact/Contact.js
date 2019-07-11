@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import { connect } from 'react-redux';
+import { hideContact } from '../../store/actions';
 
 const StyledFooter = styled.div`
 
@@ -35,9 +37,9 @@ class Contact extends React.Component {
   render() { 
     return ( 
       <StyledFooter>
-<div className={this.state.contact ? 'contact' : 'off'}>
+<div className={this.props.contact ? 'contact' : 'off'}>
 <i 
-onClick={this.closeContact}
+onClick={this.props.hideContact}
 className="fa fa-times" />
   <h1>Thanks for taking the time to reach out. How can I help you today?</h1>
   <div>
@@ -50,5 +52,11 @@ className="fa fa-times" />
      );
   }
 }
+
+const mapStateToProps = state => {
+  return {
+    contact: state.contact,
+  }
+};
  
-export default Contact;
+export default connect(mapStateToProps, { hideContact })(Contact);
