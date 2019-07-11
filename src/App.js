@@ -6,7 +6,9 @@ import './App.css';
 import styled from 'styled-components';
 
 const StyledApp = styled.div`
-background: linear-gradient(to right, rgba(0,0,0,.5), rgba(0,0,0,.5));
+background: linear-gradient(to right, #000428, #004e92);
+color: white;
+
 `;
 
 function App() {

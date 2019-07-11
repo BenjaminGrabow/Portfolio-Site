@@ -5,26 +5,16 @@ import react from './react.png';
 import styled from 'styled-components';
 
 const StyledTopMiddle = styled.div`
-
-
-.row {
   display: flex;
   width: 100%;
-}
+  padding: 1rem;
 
-.column {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  text-align: left;
-  width: 100%;
-}
 
 .text {
-  width: 50%;
+  width: 20%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  align-items: center;
 }
 
 p { 
@@ -32,10 +22,10 @@ p {
 }
 
 .images {
-  /* padding-left: 3rem; */
-  width: 100%;
+  padding: 0 1rem;
+  width: 60%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -46,28 +36,25 @@ border-radius: 50%;
 img {
         width: 20%;
         height: 8rem;
+        transition: .8s ease-in-out;
+
+        &:hover {
+          width: 25%;
+          height: 10rem;
+        }
 }
 `;
 
 const TopMiddle = () => {
   return (
     <StyledTopMiddle>
-      <div
-      className="row">
-        <div
-        className="column">
           <div className="text">
           <h3>MOTIVATED TO PRODUCE RESULTS</h3>
           <p>As a tencious self-thaught-programmer,
             I use continous iteration to produce results
             quickly and continously improve products.
           </p>
-          <h3>AN AGILE COLLABORATOR</h3>
-          <p>I have contributed to open source projects, worked on
-          engineering teams, and always stay attuned to the newest frameworks.
-          </p>
           </div>
-        </div>
         <div
         className="images">
       <img
@@ -81,7 +68,12 @@ const TopMiddle = () => {
         src={react}
         alt="react" />
         </div>
-        </div>
+          <div className="text">
+          <h3>AN AGILE COLLABORATOR</h3>
+          <p>I have contributed to open source projects, worked on
+          engineering teams, and always stay attuned to the newest frameworks.
+          </p>
+          </div>
     </StyledTopMiddle>
   );
 }

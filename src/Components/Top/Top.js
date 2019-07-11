@@ -1,9 +1,7 @@
 import React from 'react';
-
 import water from './water.jpg';
-
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+
 
 const StyledTop = styled.div`
 background-image: linear-gradient(to right, rgba(0,0,0,.5), rgba(0,0,0,.5)),url(${water});
