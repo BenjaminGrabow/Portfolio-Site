@@ -1,6 +1,7 @@
 import React from 'react';
 import water from './water.jpg';
 import styled from 'styled-components';
+import './Top.css';
 
 
 const StyledTop = styled.div`
@@ -90,11 +91,14 @@ class Top extends React.Component {
       <StyledTop>
         <div className="header">
           <h2>Benjamin</h2>
-          <a
-            className="button"
-            href="#contact">
-            Contact Me
-            </a>
+          <div className="icons">
+      <div id="wrapper">
+        <div className="box" id="facebook">&#62220;</div>
+        <div className="box" id="twitter">&#62217;</div>
+        <div className="box" id="google">&#62223;</div>
+        <div className="box" id="linkedin">&#62232;</div>
+      </div>
+      </div>
           <h2>Grabow</h2>
         </div>
         <div className="top">

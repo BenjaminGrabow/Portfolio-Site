@@ -3,31 +3,29 @@
 .icons {
     display        : flex;
     justify-content: space-between;
-    height: 100%;
+    width: 50%;
 }
 
 #wrapper {
     width          : 100%;
-    height         : 5rem;
+    /* height         : 5rem; */
     display        : flex;
     justify-content: space-between;
-    margin         : 0 15rem 1rem 15rem;
+    /* margin         : 0 15rem 1rem 15rem; */
 }
-
+/* 
 @media (max-width:900px) {
     #wrapper {
-        margin: 1.5rem 0 1.5rem 0;
+         margin: 1.5rem 0 1.5rem 0; 
         width : 100%;
     }
-}
+} */
 
 .box {
     width        : 25%;
     height       : 4rem;
     border-radius: 5rem;
     font-family  : entypo;
-    color        : 212121;
-    background   : white;
     text-align   : center;
     line-height  : 5rem;
     font-size    : 3rem;

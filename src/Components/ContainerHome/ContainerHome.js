@@ -11,6 +11,7 @@ const ContainerHome = () => {
       <Middle />
       {/* <BottomMiddle /> */}
       <Projects />
+    
     </div>
   );
 }
