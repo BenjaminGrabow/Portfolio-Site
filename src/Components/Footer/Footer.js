@@ -1,14 +1,28 @@
 import React from 'react';
 import styled from 'styled-components';
+import { combine } from 'react-redux';
 
 const StyledFooter = styled.div`
 
-.off {
-  display: none;
-}
+.button {
+  font-family: "eurostile",sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  border: .1rem solid white;
+  border-radius: .5rem;
+  height: 3.5rem;
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  transition: .6s ease-in-out;
 
-.contact {
-  background: linear-gradient(45deg, rgb(106, 120, 209), rgb(0, 164, 189));
+  &:hover {
+    background: white;
+    color: black;
+  }
 }
 
 `;
@@ -17,31 +31,22 @@ class Footer extends React.Component {
   constructor(props) {
     super(props);
     this.state = { 
-      contact: false,
+      
      }
   }
-  showContact = () => {
-    this.setState({
-      contact: true,
-    });
-  };
+  
 
   render() { 
     return ( 
       <StyledFooter>
-<div className={this.state.contact ? 'off' : 'contact'}>
-<i class="fa fa-times"></i>
-  <h1>Thanks for taking the time to reach out. How can I help you today?</h1>
-  <div>
-  <input name="name" value={this.state.name} onChange={this.changeHandler} placeholder="Name"/>
-  <input name="email" value={this.state.email} onChange={this.changeHandler} placeholder="Email"/>
+<div 
+className={!this.state.contact ? "button" : "off"}
+onClick={this.showContact}>
+  Contact Me
   </div>
-  <input name="message" value={this.state.message} onChange={this.changeHandler} placeholder="Message"/>
-</div>
-<button onClick={this.showContact}>Contact Me</button>
       </StyledFooter>
      );
   }
 }
  
-export default Footer;
+export default connect()(Footer);
