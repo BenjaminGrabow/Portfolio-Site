@@ -1,5 +1,7 @@
 import React from 'react';
 import water from './water.jpg';
+import { connect } from 'react-redux';
+import { showContact } from '../../store/actions';
 import styled from 'styled-components';
 import './Top.css';
 
@@ -93,10 +95,19 @@ class Top extends React.Component {
           <h2>Benjamin</h2>
           <div className="icons">
       <div id="wrapper">
-        <div className="entypo-github box" id="github"/>
-        <div className="box" id="twitter">&#62217;</div>
-        <div className="entypo-chat box" id="message"></div>
-        <div className="box" id="linkedin">&#62232;</div>
+        <div 
+        className="entypo-github box"
+         id="github"/>
+        <div 
+        className="box" 
+        id="twitter">&#62217;</div>
+        <div 
+        className="entypo-chat box"
+         id="message"
+         onClick={this.props.showContact}></div>
+        <div 
+        className="box"
+         id="linkedin">&#62232;</div>
       </div>
       </div>
           <h2>Grabow</h2>
@@ -118,4 +129,4 @@ class Top extends React.Component {
   }
 }
 
-export default Top;
+export default connect(null, { showContact })(Top);
