@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { combine } from 'react-redux';
+import { connect } from 'react-redux';
 
 const StyledFooter = styled.div`
 
@@ -40,7 +40,7 @@ class Footer extends React.Component {
     return ( 
       <StyledFooter>
 <div 
-className={!this.state.contact ? "button" : "off"}
+className={!this.props.contact ? "button" : "off"}
 onClick={this.showContact}>
   Contact Me
   </div>
@@ -48,5 +48,11 @@ onClick={this.showContact}>
      );
   }
 }
+
+const mapStateToProps = state => {
+  return {
+    contact: state.contact,
+  }
+};
  
-export default connect()(Footer);
+export default connect(mapStateToProps)(Footer);
