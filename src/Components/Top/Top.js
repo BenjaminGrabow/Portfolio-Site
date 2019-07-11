@@ -93,9 +93,9 @@ class Top extends React.Component {
           <h2>Benjamin</h2>
           <div className="icons">
       <div id="wrapper">
-        <div className="entypo-github box" id="facebook"/>
+        <div className="entypo-github box" id="github"/>
         <div className="box" id="twitter">&#62217;</div>
-        <div className="entypo-chat box" id="google"></div>
+        <div className="entypo-chat box" id="message"></div>
         <div className="box" id="linkedin">&#62232;</div>
       </div>
       </div>

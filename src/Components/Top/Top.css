@@ -47,7 +47,7 @@
     }
 }
 
-#facebook:hover {
+#github:hover {
     background-color: rgb(59, 89, 152);
     box-shadow      : inset 0 0 0 2.2rem #3A5795;
     transform       : rotate(360deg) scale(1.15);
@@ -61,7 +61,7 @@
     transition      : 1s;
 }
 
-#google:hover {
+#message:hover {
     background-color: rgb(221, 75, 57);
     box-shadow      : inset 0 0 0 22px #3A5795;
     transform       : rotate(360deg) scale(1.15);
