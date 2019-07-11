@@ -1,5 +1,4 @@
 import React from 'react';
-import blocks from './blocks.jpg';
 import styled from 'styled-components';
 
 const StyledBottomMiddle = styled.div`
@@ -9,9 +8,6 @@ clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-size: cover;
-background-image: url(${blocks});
 }
 
 .text {
