@@ -37,6 +37,7 @@ height: 100%;
 /* background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898; 
 background-blend-mode: multiply,multiply;
 color: white; */
+box-shadow: 5px 5px 4px 5px white;
 }
 
 .left {
@@ -52,6 +53,15 @@ text-align: center;
  width: 60%;
  display: flex;
  align-items: center;
+}
+
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.5rem;
 }
 
 .right {
