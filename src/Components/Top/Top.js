@@ -5,7 +5,6 @@ import { showContact } from '../../store/actions';
 import styled from 'styled-components';
 import './Top.css';
 
-
 const StyledTop = styled.div`
 background-image: linear-gradient(to right, rgba(0,0,0,.5), rgba(0,0,0,.5)),url(${water});
 background-position: center;
@@ -87,6 +86,10 @@ class Top extends React.Component {
     this.state = {}
   }
 
+  sendToSite = (e) => {
+    console.log(e.target.name)
+  };
+
   render() {
     return (
 
@@ -96,18 +99,23 @@ class Top extends React.Component {
           <div className="icons">
       <div id="wrapper">
         <div 
+        onClick={this.sendToSite}
         className="entypo-github box"
          id="github"/>
         <div 
         className="box" 
-        id="twitter">&#62217;</div>
+        id="twitter"
+        onClick={this.sendToSite}
+        >&#62217;</div>
         <div 
         className="entypo-chat box"
          id="message"
          onClick={this.props.showContact}></div>
         <div 
         className="box"
-         id="linkedin">&#62232;</div>
+         id="linkedin"
+         onClick={this.sendToSite}
+         >&#62232;</div>
       </div>
       </div>
           <h2>Grabow</h2>
