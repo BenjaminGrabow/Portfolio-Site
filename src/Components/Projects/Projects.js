@@ -34,9 +34,6 @@ position: absolute;
 backface-visibility: hidden;
 width: 100%; 
 height: 100%;
-/* background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898; 
-background-blend-mode: multiply,multiply;
-color: white; */
 box-shadow: 5px 5px 4px 5px white;
 }
 
@@ -64,6 +61,11 @@ p {
   font-size: 1.5rem;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .right {
 width: 30%;
 display: flex;
@@ -81,10 +83,10 @@ height: 20rem;
   transform: rotateY(180deg);
   position: absolute;
   backface-visibility: hidden;
-  background: yellow;
   color: white;
   width: 100%;
   height: 100%;
+  box-shadow: 5px 5px 4px 5px black;
 }
 `;
 
@@ -115,6 +117,10 @@ const Projects = () => {
             </div>
           </div>
           <div className="back" >
+            <a href="https://github.com/BenjaminGrabow/Use-My-Tech-Stuff">
+              <div
+                className="entypo-github box"
+                id="github" /></a>
           </div>
         </div>
       </div>
@@ -123,22 +129,26 @@ const Projects = () => {
           <div className="front">
             <div
               className="left">
-              <h3>Use My Tech Stuff</h3>
+              <h3>Top Nine</h3>
             </div>
             <div
               className="middle">
               <img
                 src={useTech}
-                alt="Use My Tech Stuff gif" />
+                alt="Top Nine" />
             </div>
             <div className="right">
-              <p>React</p>
-              <p>Redux</p>
-              <p>React Router</p>
-              <p>API</p>
+              <p>Javascript</p>
+              <p>CSS</p>
+              <p>LESS</p>
+              <p>HTML5</p>
             </div>
           </div>
           <div className="back" >
+            <a href="https://github.com/BenjaminGrabow/Lambda-Build-Week">
+              <div
+                className="entypo-github box"
+                id="github" /></a>
           </div>
         </div>
       </div>
