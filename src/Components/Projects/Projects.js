@@ -3,7 +3,7 @@ import useTech from './useTech.gif';
 import styled from 'styled-components';
 
 const StyledProjects = styled.div`
-/* height: 100vh; */
+text-align: center;
 
 .row {
   display: flex;
@@ -19,7 +19,7 @@ const StyledProjects = styled.div`
   width: 100%;
   height: 100%;
   width: 90%;
-  height: 35rem;
+  height: 40rem;
   position: relative;
   margin: 1rem;
 
@@ -59,7 +59,8 @@ align-items: center;
 }
 
 img {
-  /* align-self: flex-end; */
+width: 100%;
+height: 20rem;
 }
 
 .back {
@@ -76,7 +77,7 @@ img {
 const Projects = () => {
   return (
     <StyledProjects>
-      <h2>Project Portfolio</h2>
+      <h1>Project Portfolio</h1>
       <div
         id="projects"
         className="row">
