@@ -18,7 +18,7 @@ const StyledProjects = styled.div`
   transition: all 1s ease;
   width: 100%;
   height: 100%;
-  width: 30%;
+  width: 90%;
   height: 25rem;
   position: relative;
   margin: 1rem;
@@ -67,8 +67,6 @@ const Projects = () => {
       <div
         id="projects"
         className="row">
-        <div
-          className="column">
           <div className="card">
             <div className="front">
               <div className="row">
@@ -86,12 +84,9 @@ const Projects = () => {
                 alt="Use My Tech Stuff gif" />
             </div>
             <div className="back" >
-
-            </div>
           </div>
         </div>
-        <div
-          className="column">
+       
           <div className="card">
             <div className="front">
               <div 
@@ -104,10 +99,9 @@ const Projects = () => {
               <p>API</p>
             </div>
             <div className="back" >
-
-            </div>
           </div>
         </div>
+
         <div className="card">
           <div className="front">
             <h3>Use My Tech Stuff</h3>
@@ -117,13 +111,12 @@ const Projects = () => {
             <p>API</p>
           </div>
           <div className="back" >
-
           </div>
         </div>
-
       </div>
+
       <div className="row">
-        <div className="column">
+       
           <div className="card">
             <div className="front">
               <h3>Top Nine</h3>
@@ -133,12 +126,21 @@ const Projects = () => {
               <p>LESS</p>
             </div>
             <div className="back">
-
             </div>
+        </div>
+       
+          <div className="card">
+            <div className="front">
+              <h3>Top Nine</h3>
+              <p>Javascript</p>
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>LESS</p>
+            </div>
+            <div className="back">
           </div>
         </div>
-        <div
-          className="column">
+        
           <div className="card">
             <div className="front">
               <h3>Top Nine</h3>
@@ -149,22 +151,7 @@ const Projects = () => {
             </div>
             <div className="back">
 
-            </div>
-          </div>
-        </div>
-        <div
-          className="column">
-          <div className="card">
-            <div className="front">
-              <h3>Top Nine</h3>
-              <p>Javascript</p>
-              <p>HTML</p>
-              <p>CSS</p>
-              <p>LESS</p>
-            </div>
-            <div className="back">
-
-            </div>
+            
           </div>
         </div>
       </div>
