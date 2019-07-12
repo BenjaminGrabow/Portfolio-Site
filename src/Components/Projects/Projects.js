@@ -19,7 +19,7 @@ const StyledProjects = styled.div`
   width: 100%;
   height: 100%;
   width: 90%;
-  height: 25rem;
+  height: 35rem;
   position: relative;
   margin: 1rem;
 
@@ -42,7 +42,20 @@ const StyledProjects = styled.div`
 }
 
 .left {
+width: 35%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
 
+.right {
+width: 65%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 
 img {
@@ -74,10 +87,12 @@ const Projects = () => {
               className="left">
               <h3>Use My Tech Stuff</h3>
               </div>
+                <div className="right">
               <p>React</p>
               <p>Redux</p>
               <p>React Router</p>
               <p>API</p>
+              </div>
               </div>
               <img
                 src={useTech}
