@@ -13,6 +13,11 @@ background-size: cover;
 height: 100vh;
 color: white;
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .header {
   display: flex;
 justify-content: space-around;
@@ -86,10 +91,6 @@ class Top extends React.Component {
     this.state = {}
   }
 
-  sendToSite = (e) => {
-    console.log(e.target.name)
-  };
-
   render() {
     return (
 
@@ -98,24 +99,24 @@ class Top extends React.Component {
           <h2>Benjamin</h2>
           <div className="icons">
       <div id="wrapper">
+     <a href="https://github.com/BenjaminGrabow">
         <div 
-        onClick={this.sendToSite}
         className="entypo-github box"
-         id="github"/>
+         id="github"/></a>
         <div 
         className="box" 
         id="twitter"
-        onClick={this.sendToSite}
         >&#62217;</div>
         <div 
         className="entypo-chat box"
          id="message"
          onClick={this.props.showContact}></div>
-        <div 
+       <a href="https://www.linkedin.com/in/benjamin-grabow-4a477118a/">
+         <div 
         className="box"
          id="linkedin"
-         onClick={this.sendToSite}
          >&#62232;</div>
+         </a> 
       </div>
       </div>
           <h2>Grabow</h2>

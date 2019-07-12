@@ -80,6 +80,7 @@ const Projects = () => {
       <div
         id="projects"
         className="row">
+          
           <div className="card">
             <div className="front">
               <div className="row">
