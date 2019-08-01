@@ -22,9 +22,7 @@ text-align: center;
   position: relative;
   margin: 1rem;
 
-&:hover {
-  transform: rotateY(180deg);
-}
+
 }
 
 .front {
@@ -90,14 +88,34 @@ height: 20rem;
 }
 `;
 
-const Projects = () => {
-  return (
-    <StyledProjects>
+class Projects extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {  }
+
+  }
+
+      rotate = () => {
+
+        const card = document.querySelector(".card");
+        if(card.style.transform === 'rotateY(180deg)'){
+          card.style.transform = 'rotateY(0deg)';
+        } else {
+          card.style.transform = 'rotateY(180deg)';
+        }
+
+      }
+
+  render() { 
+    return ( 
+<StyledProjects>
       <h1>Project Portfolio</h1>
       <div
         id="projects"
         className="row">
-        <div className="card">
+        <div 
+        onClick={this.rotate}
+        className="card">
           <div className="front">
             <div
               className="left">
@@ -125,7 +143,8 @@ const Projects = () => {
         </div>
       </div>
       <div className="row">
-        <div className="card">
+        <div className="card"
+        onClick={this.rotate}>
           <div className="front">
             <div
               className="left">
@@ -153,7 +172,8 @@ const Projects = () => {
         </div>
       </div>
     </StyledProjects>
-  );
+     );
+  }
 }
-
+ 
 export default Projects;
