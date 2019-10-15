@@ -33,12 +33,11 @@ class Projects extends React.Component {
         <div className="projects">
           <div className="card">
           <Card
-            
             header="Befit - Workout Tracker"
             gif={useTech}
             code_link="https://github.com/labseu2-workout-tracker"
             project_link="www.befittracker.com"
-            main-text=""
+            main_text=""
           />
           </div>
           <div className="card">
@@ -46,8 +45,8 @@ class Projects extends React.Component {
             
             header="Bookr - Ebay for books"
             gif={useTech}
-            code_link="https://github.com/labseu2-workout-tracker"
-            project_link="www.befittracker.com"
+            code_link="https://github.com/BenjaminGrabow/Bookr"
+            project_link="https://bookr-build-week.herokuapp.com/"
             main-text=""
           />
           </div>
