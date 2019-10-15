@@ -4,6 +4,10 @@ import useTech from "./useTech.gif";
 import styled from "styled-components";
 
 const StyledProjects = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 
 .projects {
   display: flex;
@@ -27,38 +31,46 @@ class Projects extends React.Component {
       <StyledProjects>
         <h1>Projects</h1>
         <div className="projects">
+          <div className="card">
           <Card
-            className="card"
+            
             header="Befit - Workout Tracker"
             gif={useTech}
             code_link="https://github.com/labseu2-workout-tracker"
             project_link="www.befittracker.com"
             main-text=""
           />
+          </div>
+          <div className="card">
           <Card
-            className="card"
+            
             header="Bookr - Ebay for books"
             gif={useTech}
             code_link="https://github.com/labseu2-workout-tracker"
             project_link="www.befittracker.com"
             main-text=""
           />
+          </div>
+          <div className="card">
           <Card
-            className="card"
+            
             header="Use My Tech Stuff"
             gif={useTech}
             code_link="https://github.com/BenjaminGrabow/Use-My-Tech-Stuff"
             project_link="https://dreamy-almeida-7517a0.netlify.com/"
             main-text=""
           />
+          </div>
+          <div className="card">
           <Card
-            className="card"
+            
             header="Top Nine Friends"
             gif={useTech}
             code-link=""
             project-link="https://hungry-kalam-7b7bce.netlify.com"
             main-text=""
           />
+          </div>
         </div>
       </StyledProjects>
     );

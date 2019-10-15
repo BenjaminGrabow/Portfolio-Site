@@ -64,10 +64,10 @@ export default function RecipeReviewCard(props) {
         <div className="icons">
           <div id="wrapper">
             <a href={props.code_link}>
-              <div className="entypo-github box" id="github" />
+            <i style={{color: "black"}} className="fa fa-github" id="box"/>
             </a>
             <a href={props.project_link}>
-              <i style={{color: "black"}} className="fa fa-internet-explorer" id="box"></i>
+              <i style={{color: "black"}} className="fa fa-internet-explorer" id="box"/>
             </a>
           </div>
         </div>
