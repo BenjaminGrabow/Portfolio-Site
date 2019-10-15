@@ -15,6 +15,7 @@ color: white;
 width: 100%;
 clip-path: circle(50% at 50% 50%);
 
+
 a {
   text-decoration: none;
   color: white;
