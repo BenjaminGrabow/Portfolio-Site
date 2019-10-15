@@ -22,8 +22,12 @@ text-align: center;
   position: relative;
   margin: 1rem;
 
+ &:hover {
+  transform: rotateY(180deg)
+}
 
 }
+
 
 .front {
 display: flex;
@@ -97,12 +101,12 @@ class Projects extends React.Component {
 
       rotate = () => {
 
-        const card = document.querySelector(".card");
-        if(card.style.transform === 'rotateY(180deg)'){
-          card.style.transform = 'rotateY(0deg)';
-        } else {
-          card.style.transform = 'rotateY(180deg)';
-        }
+        // const card = document.querySelector(".card");
+        // if(card.style.transform === 'rotateY(180deg)'){
+        //   card.style.transform = 'rotateY(0deg)';
+        // } else {
+        //   card.style.transform = 'rotateY(180deg)';
+        // }
 
       }
 
