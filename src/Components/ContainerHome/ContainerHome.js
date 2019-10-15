@@ -10,9 +10,9 @@ const ContainerHome = () => {
   return (
     <div>
       <Top />
-      <Middle />
       {/* <BottomMiddle /> */}
       <Projects />
+      <Middle />
       <Contact/>
       <Footer/>
     

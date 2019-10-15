@@ -3,6 +3,7 @@ import Card from "./Card";
 import useTech from "./useTech.gif";
 import workout from "./workout.gif";
 import bookr from "./bookr.gif";
+import topnine from "./topnine.gif";
 import styled from "styled-components";
 
 const StyledProjects = styled.div`
@@ -72,8 +73,8 @@ class Projects extends React.Component {
           <div className="card">
             <Card
               header="Top Nine Friends"
-              gif={useTech}
-              code-link=""
+              gif={topnine}
+              code-link="https://github.com/BenjaminGrabow/Lambda-Build-Week"
               project-link="https://hungry-kalam-7b7bce.netlify.com"
               main-text=""
             />

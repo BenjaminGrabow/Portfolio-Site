@@ -7,7 +7,7 @@ import styled from 'styled-components';
 
 const StyledApp = styled.div`
   /* background: linear-gradient(to right, #bdc3c7, #2c3e50); */
-  background-color: #01485B;
+  /* background-color: #01485B; */
   /* background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); */
 color: white;
 
