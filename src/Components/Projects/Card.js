@@ -13,6 +13,7 @@ import { red } from '@material-ui/core/colors';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import '../Top/Top.css';
 
 const useStyles = makeStyles(theme => ({
   card: {
@@ -63,12 +64,14 @@ export default function RecipeReviewCard(props) {
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites">
-          <FavoriteIcon />
-        </IconButton>
-        <IconButton aria-label="share">
-          <ShareIcon />
-        </IconButton>
+        <div className="icons">
+      <div id="wrapper">
+     <a href="https://github.com/BenjaminGrabow/Use-My-Tech-Stuff">
+        <div 
+        className="entypo-github box"
+         id="github"/></a>
+      </div>
+      </div>
         <IconButton
           className={clsx(classes.expand, {
             [classes.expandOpen]: expanded,
