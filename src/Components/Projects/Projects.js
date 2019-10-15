@@ -115,7 +115,7 @@ class Projects extends React.Component {
     return ( 
 <StyledProjects>
       <h1>Project Portfolio</h1>
-      <Card/>
+      <Card gif={useTech}/>
       <div
         id="projects"
         className="row">
