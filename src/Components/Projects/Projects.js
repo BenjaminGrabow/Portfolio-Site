@@ -43,6 +43,16 @@ class Projects extends React.Component {
           <div className="card">
           <Card
             
+            header="Algorithm Visualizer"
+            gif={useTech}
+            code_link="https://github.com/BenjaminGrabow/Visualize-Algorithms"
+            project_link="https://bookr-build-week.herokuapp.com/"
+            main-text=""
+          />
+          </div> 
+          <div className="card">
+          <Card
+            
             header="Bookr - Ebay for books"
             gif={useTech}
             code_link="https://github.com/BenjaminGrabow/Bookr"
