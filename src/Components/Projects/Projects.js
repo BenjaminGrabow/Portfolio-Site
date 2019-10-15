@@ -1,185 +1,68 @@
-import React from 'react';
-import Card from './Card';
-import useTech from './useTech.gif';
-import styled from 'styled-components';
+import React from "react";
+import Card from "./Card";
+import useTech from "./useTech.gif";
+import styled from "styled-components";
 
 const StyledProjects = styled.div`
-text-align: center;
 
-.row {
+.projects {
   display: flex;
-  justify-content: space-around;
-  margin: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .card {
-  position: absolute;
-  transform-style: preserve-3d;
-  transition: all 1s ease;
-  width: 100%;
-  height: 100%;
-  width: 70%;
-  height: 30rem;
-  position: relative;
   margin: 1rem;
-
- &:hover {
-  transform: rotateY(180deg)
-}
-
-}
-
-
-.front {
-display: flex;
-justify-content: space-between;
-position: absolute;
-backface-visibility: hidden;
-width: 100%; 
-height: 100%;
-box-shadow: 5px 5px 4px 5px white;
-}
-
-.left {
-width: 30%;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-text-align: center;
-}
-
-.middle {
- width: 60%;
- display: flex;
- align-items: center;
-}
-
-
-h3 {
-  font-size: 2rem;
-}
-
-p {
-  font-size: 1.5rem;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-}
-
-.right {
-width: 30%;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-}
-
-img {
-width: 100%;
-height: 20rem;
-}
-
-.back {
-  transform: rotateY(180deg);
-  position: absolute;
-  backface-visibility: hidden;
-  color: white;
-  width: 100%;
-  height: 100%;
-  box-shadow: 5px 5px 4px 5px black;
+  width: 30%;
 }
 `;
 
 class Projects extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {  }
-
+    this.state = {};
   }
 
-      rotate = () => {
-
-        // const card = document.querySelector(".card");
-        // if(card.style.transform === 'rotateY(180deg)'){
-        //   card.style.transform = 'rotateY(0deg)';
-        // } else {
-        //   card.style.transform = 'rotateY(180deg)';
-        // }
-
-      }
-
-  render() { 
-    return ( 
-<StyledProjects>
-      <h1>Project Portfolio</h1>
-      <Card gif={useTech}/>
-      <div
-        id="projects"
-        className="row">
-        <div 
-        onClick={this.rotate}
-        className="card">
-          <div className="front">
-            <div
-              className="left">
-              <h3>Use My Tech Stuff</h3>
-            </div>
-            <div
-              className="middle">
-              <img
-                src={useTech}
-                alt="Use My Tech Stuff gif" />
-            </div>
-            <div className="right">
-              <p>React</p>
-              <p>Redux</p>
-              <p>React Router</p>
-              <p>API</p>
-            </div>
-          </div>
-          <div className="back" >
-            <a href="https://github.com/BenjaminGrabow/Use-My-Tech-Stuff">
-              <div
-                className="entypo-github box"
-                id="github" /></a>
-          </div>
+  render() {
+    return (
+      <StyledProjects>
+        <h1>Projects</h1>
+        <div className="projects">
+          <Card
+            className="card"
+            header="Befit - Workout Tracker"
+            gif={useTech}
+            code_link="https://github.com/labseu2-workout-tracker"
+            project_link="www.befittracker.com"
+            main-text=""
+          />
+          <Card
+            className="card"
+            header="Bookr - Ebay for books"
+            gif={useTech}
+            code_link="https://github.com/labseu2-workout-tracker"
+            project_link="www.befittracker.com"
+            main-text=""
+          />
+          <Card
+            className="card"
+            header="Use My Tech Stuff"
+            gif={useTech}
+            code_link="https://github.com/BenjaminGrabow/Use-My-Tech-Stuff"
+            project_link="https://dreamy-almeida-7517a0.netlify.com/"
+            main-text=""
+          />
+          <Card
+            className="card"
+            header="Top Nine Friends"
+            gif={useTech}
+            code-link=""
+            project-link="https://hungry-kalam-7b7bce.netlify.com"
+            main-text=""
+          />
         </div>
-      </div>
-      <div className="row">
-        <div className="card"
-        onClick={this.rotate}>
-          <div className="front">
-            <div
-              className="left">
-              <h3>Top Nine</h3>
-            </div>
-            <div
-              className="middle">
-              <img
-                src={useTech}
-                alt="Top Nine" />
-            </div>
-            <div className="right">
-              <p>Javascript</p>
-              <p>CSS</p>
-              <p>LESS</p>
-              <p>HTML5</p>
-            </div>
-          </div>
-          <div className="back" >
-            <a href="https://github.com/BenjaminGrabow/Lambda-Build-Week">
-              <div
-                className="entypo-github box"
-                id="github" /></a>
-          </div>
-        </div>
-      </div>
-    </StyledProjects>
-     );
+      </StyledProjects>
+    );
   }
 }
- 
+
 export default Projects;
