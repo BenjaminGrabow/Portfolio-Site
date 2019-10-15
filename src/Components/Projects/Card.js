@@ -15,7 +15,7 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 const useStyles = makeStyles(theme => ({
   card: {
     maxWidth: 345,
-    backgroundColor: "rgb(153, 151, 151)",
+    backgroundColor: "#175163",
     color: "white",
     padding: "2rem",
     borderRadius: "10px"
@@ -66,20 +66,21 @@ export default function RecipeReviewCard(props) {
         <div className="icons">
           <a href={props.code_link}>
             <i
-              style={{ color: "black", fontSize: "1.5rem" }}
+              style={{ color: "white", fontSize: "1.5rem" }}
               className="fa fa-github"
               id="box"
             />
           </a>
           <a href={props.project_link}>
             <i
-              style={{ color: "black", fontSize: "1.5rem" }}
+              style={{ color: "white", fontSize: "1.5rem" }}
               className="fa fa-internet-explorer"
               id="box"
             />
           </a>
         </div>
         <IconButton
+              style={{ color: "white", fontSize: "1.5rem" }}          
           className={clsx(classes.expand, {
             [classes.expandOpen]: expanded
           })}
