@@ -2,6 +2,7 @@ import React from 'react';
 import js from './js.png';
 import nodejs from './nodejs.png';
 import react from './react.png';
+import python from './python.png';
 import styled from 'styled-components';
 
 const Middle = styled.div`
@@ -70,10 +71,13 @@ const TopMiddle = () => {
         alt="js" />
       <img
         src={nodejs}
-        alt={nodejs} />
+        alt="nodejs" />
       <img
         src={react}
         alt="react" />
+      <img
+        src={python}
+        alt="python" />
         </div>
           <div className="text">
           <h3>AN AGILE COLLABORATOR</h3>

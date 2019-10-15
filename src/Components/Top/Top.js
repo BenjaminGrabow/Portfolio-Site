@@ -12,7 +12,9 @@ background-repeat: no-repeat;
 background-size: cover;
 height: 100vh;
 color: white;
-/* clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%); */
+width: 100%;
+clip-path: circle(50% at 50% 50%);
+
 a {
   text-decoration: none;
   color: white;
@@ -23,11 +25,6 @@ a {
 justify-content: space-around;
 align-items: center;
 padding-bottom: 7rem;
-
-h2 {
-font-family: 'Permanent Marker', cursive;
-font-size: 3rem;
-}
 }
 
 .button {
@@ -81,6 +78,7 @@ h1 {
 
 p {
   font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
 }
 
 `;
@@ -96,7 +94,6 @@ class Top extends React.Component {
 
       <StyledTop>
         <div className="header">
-          <h2>Benjamin</h2>
           <div className="icons">
       <div id="wrapper">
      <a href="https://github.com/BenjaminGrabow">
@@ -119,7 +116,6 @@ class Top extends React.Component {
          </a> 
       </div>
       </div>
-          <h2>Grabow</h2>
         </div>
         <div className="top">
           <div className="column">
