@@ -12,7 +12,7 @@ background-repeat: no-repeat;
 background-size: cover;
 height: 100vh;
 color: white;
-
+/* clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%); */
 a {
   text-decoration: none;
   color: white;

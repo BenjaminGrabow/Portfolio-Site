@@ -1,4 +1,5 @@
 import React from 'react';
+import Card from './Card';
 import useTech from './useTech.gif';
 import styled from 'styled-components';
 
@@ -114,6 +115,7 @@ class Projects extends React.Component {
     return ( 
 <StyledProjects>
       <h1>Project Portfolio</h1>
+      <Card/>
       <div
         id="projects"
         className="row">
