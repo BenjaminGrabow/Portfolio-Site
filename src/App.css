@@ -5,4 +5,6 @@
 body {
   /* background-color: #01485B;
   color: white; */
+  margin: 0 auto;
+  max-width: 1200px;
 }
