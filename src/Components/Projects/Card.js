@@ -15,7 +15,7 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 const useStyles = makeStyles(theme => ({
   card: {
     maxWidth: 345,
-    backgroundColor: "#175163",
+    backgroundColor: "#245365",
     color: "white",
     padding: "2rem",
     borderRadius: "10px"
