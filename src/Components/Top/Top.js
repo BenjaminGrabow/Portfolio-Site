@@ -13,8 +13,8 @@ const StyledTop = styled.div`
     ),
     url(${water});
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
   height: 100vh;
   color: white;
  

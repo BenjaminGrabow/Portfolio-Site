@@ -3,9 +3,10 @@ import React from "react";
 // import Middle from "../Middle/Middle";
 // import Projects from "../Projects/Projects";
 // import Contact from "../Contact/Contact";
-// import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
+import About from "../About/About";
 import Cards from "../Cards/Cards";
+import Footer from "../Footer/Footer";
 
 const ContainerHome = () => {
   return (
@@ -14,9 +15,11 @@ const ContainerHome = () => {
       <Middle />
       <Projects />
       <Contact/>
-      <Footer/> */}
+    <Footer/> */}
       <Navbar/>
+      <About/>
       <Cards/>
+      <Footer/>
     </div>
   );
 }

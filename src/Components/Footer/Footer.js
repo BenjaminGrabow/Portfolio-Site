@@ -1,70 +1,60 @@
-import React from 'react';
-import styled from 'styled-components';
-import { connect } from 'react-redux';
-import { showContact } from '../../store/actions';
+import React from "react";
+import styled from "styled-components";
 
 const StyledFooter = styled.div`
-
-.off {
-  display: none;
-}
-
-.button-container {
-display: flex;
-justify-content: center;
-}
-
-.button {
-  font-family: "eurostile",sans-serif;
-  font-size: 1rem;
-  text-decoration: none;
-  border: .1rem solid white;
-  border-radius: .5rem;
-  height: 3.5rem;
-  width: 15%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-weight: 600;
-  transition: .6s ease-in-out;
+  justify-content: space-around;
 
-  &:hover {
-    background: white;
-    color: black;
+  .left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-}
 
+  .right-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    i {
+      margin: .5rem;
+    }
+  }
 `;
 
-class Footer extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { 
-      
-     }
-  }
-  
+const routes = [
+  "befit",
+  "bookr",
+  "use_my_tech",
+  "visualize_algorithm",
+  "speedreader",
+  "top_nine"
+]; // array for navlinks and routes
+// add to app.js as route and as link in card
 
-  render() { 
-    return ( 
-      <StyledFooter>
-        <div className={!this.props.contact ? "button-container" : "off"}>
-<div 
-className={!this.props.contact ? "button" : "off"}
-onClick={this.props.showContact}>
-  Contact Me
-  </div>
-  </div>
-      </StyledFooter>
-     );
-  }
-}
+// research in old projects about passing props
+// pass all props from main component cards
+//
+// routes.map(project => <Route path={`/${project}`} component={(props) =>  <SingleCard {...props}
+//  title={title} img={img} text={text} techstack={techstack} feature={feature} />} />);
 
-const mapStateToProps = state => {
-  return {
-    contact: state.contact,
-  }
+const Footer = () => {
+  return (
+    <StyledFooter>
+      <div className="left-side">
+        <p>Copyright Benjamin Grabow</p>
+        <p>2019</p>
+      </div>
+
+      <div className="right-side">
+        <i class="fab fa-linkedin" />
+        <i className="fa fa-twitter" />
+        <i className="fa fa-envelope" />
+        <i className="fa fa-github" id="box" />
+      </div>
+    </StyledFooter>
+  );
 };
- 
-export default connect(mapStateToProps, { showContact })(Footer);
+
+export default Footer;
