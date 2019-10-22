@@ -3,14 +3,14 @@ import Card from "./Card";
 import cardInfo from "./cardInfo";
 import styled from "styled-components";
 
-const StyledCards = styled.div`
+const StyledCardContainer = styled.div`
      
 
 `;
 
-const Cards = () => {
+const CardContainer = () => {
   return (
-    <StyledCards>
+    <StyledCardContainer>
       {cardInfo.map((project, index) => {
         return (<div key={index} className="card">
         <Card
@@ -22,8 +22,8 @@ const Cards = () => {
         />
       </div>)
       } )}
-    </StyledCards>
+    </StyledCardContainer>
   );
 };
 
-export default Cards;
+export default CardContainer;

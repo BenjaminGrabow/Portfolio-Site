@@ -1,10 +1,10 @@
-import workout from "../Projects/gifs/workout.gif";
-import useTech from "../Projects/gifs/useTech.gif";
-import bookr from "../Projects/gifs/bookr.gif";
-import topnine from "../Projects/gifs/topnine.gif";
+import workout from ".//gifs/workout.gif";
+import useTech from "./gifs/useTech.gif";
+import bookr from "./gifs/bookr.gif";
+import topnine from "./gifs/topnine.gif";
 
  const cardInfo = [{
-  header: "Befit - Workout Tracker",
+  header: "Befit",
   img: workout,
   code_link: "https://github.com/labseu2-workout-tracker",
   project_link: "https://www.befittracker.com",
@@ -18,7 +18,7 @@ import topnine from "../Projects/gifs/topnine.gif";
   start workout / add workout to my workout list /`
 },
 {
-  header: "Bookr - Ebay for books",
+  header: "Bookr",
   img: bookr,
   code_link: "https://github.com/BenjaminGrabow/Bookr",
   project_link: "https://bookr-build-week.herokuapp.com/",

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const StyledCard = styled.div`
   display: flex;
@@ -18,18 +19,18 @@ const StyledCard = styled.div`
     img {
       height: 220px;
       width: 70%;
-      border: .8rem solid black;
+      border: 0.6rem solid #73737d;
     }
   }
 
   .text {
     width: 50%;
-
+    
     p {
-      color: #73737D;
+      color: #73737d;
     }
   }
-
+  
   .icons {
     display: flex;
     justify-content: center;
@@ -39,7 +40,12 @@ const StyledCard = styled.div`
       padding: 1rem;
     }
   }
-`;
+
+  a {
+    text-decoration: none;
+    color: black
+  }
+  `;
 
 const Card = props => {
   const { img, header, text, code_link, project_link } = props;
@@ -50,7 +56,9 @@ const Card = props => {
         <img src={img} alt={text} />
       </div>
       <div className="text">
-        <h2>{header}</h2>
+        <Link to={`/${header.split(" ").join("_")}`}>
+          <h2>{header}</h2>
+        </Link>
         <p>{text}</p>
         <div className="icons">
           <a href={code_link}>
