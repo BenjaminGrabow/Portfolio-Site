@@ -47,9 +47,11 @@ const Card = props => {
 
   return (
     <StyledCard>
+        <Link to={header.split(" ").join("_")} >
       <div className="image">
         <img src={img} alt={text} />
       </div>
+        </Link>
       <div className="text">
         <Link to={`/${header.split(" ").join("_")}`}>
           <h2>{header}</h2>
