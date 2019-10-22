@@ -7,19 +7,14 @@ const StyledCard = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 0;
-  /* width: 100%; */
 
   .image {
-    /* width: 50%; */
     height: 220px;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 
     img {
       height: 220px;
       width: 70%;
-      border: 0.6rem solid #73737d;
+      border: 0.4rem solid #73737d;
     }
   }
 

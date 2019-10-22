@@ -20,6 +20,7 @@ function App() {
               text={project.text}
               techstack={project.techstack}
               features={project.features}
+              techArray={project.techArray}
             />
           )}
         />
