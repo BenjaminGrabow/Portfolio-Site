@@ -3,27 +3,40 @@ import styled from "styled-components";
 
 const StyledCard = styled.div`
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+  /* width: 100%; */
 
   .image {
-    width: 50%;
+    /* width: 50%; */
     height: 220px;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 
     img {
       height: 220px;
+      width: 70%;
+      border: .8rem solid black;
     }
   }
 
   .text {
     width: 50%;
+
+    p {
+      color: #73737D;
+    }
   }
 
   .icons {
+    display: flex;
+    justify-content: center;
     i {
-      color: "white";
-      font-size: "1.5rem";
+      color: black;
+      font-size: 1.5rem;
+      padding: 1rem;
     }
   }
 `;

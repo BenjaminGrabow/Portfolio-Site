@@ -48,7 +48,7 @@ const Footer = () => {
       </div>
 
       <div className="right-side">
-        <i class="fab fa-linkedin" />
+        <i className="fab fa-linkedin" />
         <i className="fa fa-twitter" />
         <i className="fa fa-envelope" />
         <i className="fa fa-github" id="box" />

@@ -5,7 +5,7 @@ import styled from "styled-components";
 const StyledNavbar = styled.div`
 display: flex;
 align-items: center;
-justify-content: space-around;
+justify-content: space-between;
 padding-top: 2.5rem;
 
 .links {
@@ -18,12 +18,13 @@ padding-top: 2.5rem;
 a {
   text-decoration: none;
   /* margin-left: 1rem; */
+  color: black;
 }
 
 .logo {
   text-align: center;
   background-color: black;
-  /* color: white; */
+  color: white;
   width: 2rem;
   font-size: 2rem;
   font-weight: bold; 
