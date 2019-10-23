@@ -62,8 +62,7 @@ const About = () => {
       <div className="text">
         <p>
           Hey I’m Ben, Fullstack Software Engineer. Passionate about Artificial intelligence 🤔 Blockchain 🛠. I
-          love coding 🥳, learning 😎, and sharing. I write as I learn 🤓. I 
-          learn as a write ✍🏼.
+          love coding 🥳, learning 😎, and sharing.
         </p>
       </div>
       </div>
